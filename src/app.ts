@@ -1,4 +1,4 @@
-import express, { Application, Request, Response } from 'express'
+import express, { Application, Request } from 'express'
 const app: Application = express();
 import cors from "cors"
 
@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res) => {
     res.send('University management Server is running')
 })
 
