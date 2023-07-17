@@ -6,7 +6,7 @@ import config from "./config/index";
 
 async function bootstrap() {
     try {
-        await mongoose.connect(config.DATABASE_URL as string)
+        await mongoose.connect('mongodb://localhost:27017/')
         console.log("database connection successful")
         app.listen(5000, () => {
             console.log(`Server is running at http://localhost:${config.PORT}`);
