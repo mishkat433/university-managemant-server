@@ -1,0 +1,28 @@
+ [UM] [31merror[39m: Academic Semester is already exist Sat Jul 22 2023 2 : 21 : 22
+ [UM] [31merror[39m: Invalid semester code Sat Jul 22 2023 2 : 21 : 39
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+] Sat Jul 22 2023 2 : 37 : 4
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+] Sat Jul 22 2023 2 : 37 : 52
+ [UM] [31merror[39m: Invalid semester code Sat Jul 22 2023 2 : 39 : 15
+ [UM] [31merror[39m: Academic Semester is already exist Sat Jul 22 2023 2 : 39 : 29

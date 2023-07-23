@@ -1,19 +1,31 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-console */
 
 import { ErrorRequestHandler } from "express";
 import config from "../../config";
 import { IGenericErrorMessage } from "../../globalInterfaces/error";
 import handleValidationError from "../../Errors/handleValidationError";
 import ApiError from "../../Errors/ApiError";
+import { errorLogger } from "../../shared/logger";
+import { ZodError } from "zod"
+import handleZodError from "../../Errors/handleZodError";
 
 const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
+
+    config.env === 'development' ? console.log(err) : errorLogger.error(err);
 
     let statusCode = 500;
     let message = 'something went wrong'
     let errorMessages: IGenericErrorMessage[] = []
 
-
-    if (err.name === "ValidatorError") {
+    if (err.name === "ValidationError") {
         const simplifiedError = handleValidationError(err)
+        statusCode = simplifiedError.statusCode
+        message = simplifiedError.message
+        errorMessages = simplifiedError.errorMessages
+    }
+    else if (err instanceof ZodError) {
+        const simplifiedError = handleZodError(err)
         statusCode = simplifiedError.statusCode
         message = simplifiedError.message
         errorMessages = simplifiedError.errorMessages
@@ -22,7 +34,7 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
         statusCode = err.statusCode
         message = err.message
         errorMessages = err?.message ? [{
-            path: '',
+            path: "",
             message: err?.message
         }] : []
     }

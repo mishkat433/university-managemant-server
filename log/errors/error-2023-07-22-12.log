@@ -1,0 +1,46 @@
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "string",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected number, received string"
+  }
+] Sat Jul 22 2023 0 : 2 : 39
+ [UM] [31merror[39m: [
+  {
+    "received": "05",
+    "code": "invalid_enum_value",
+    "options": [
+      "01",
+      "02",
+      "03"
+    ],
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Invalid enum value. Expected '01' | '02' | '03', received '05'"
+  }
+] Sat Jul 22 2023 0 : 17 : 41
+ [UM] [31merror[39m: [
+  {
+    "received": "summer",
+    "code": "invalid_enum_value",
+    "options": [
+      "Autumn",
+      "Summer",
+      "Fall"
+    ],
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'summer'"
+  }
+] Sat Jul 22 2023 0 : 18 : 0
+ [UM] [31merror[39m: Academic Semester already exist Sat Jul 22 2023 0 : 32 : 48
+ [UM] [31merror[39m: Academic Semester already exist Sat Jul 22 2023 0 : 33 : 0
