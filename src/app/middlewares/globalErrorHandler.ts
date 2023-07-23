@@ -9,7 +9,9 @@ import ApiError from "../../Errors/ApiError";
 import { errorLogger } from "../../shared/logger";
 import { ZodError } from "zod"
 import handleZodError from "../../Errors/handleZodError";
+import handleCastError from "../../Errors/handleCastError";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
 
     config.env === 'development' ? console.log(err) : errorLogger.error(err);
@@ -38,6 +40,12 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
             message: err?.message
         }] : []
     }
+    else if (err.name === 'CastError') {
+        const simplifiedError = handleCastError(err)
+        statusCode = simplifiedError.statusCode
+        message = simplifiedError.message
+        errorMessages = simplifiedError.errorMessages
+    }
     else if (err instanceof Error) {
         statusCode = 400;
         message = err?.message;
@@ -45,7 +53,6 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
             path: '',
             message: err?.message
         }] : []
-
     }
 
 
@@ -55,8 +62,6 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
         errorMessages,
         stack: config.env !== 'production' ? err?.stack : undefined
     })
-
-    next()
 }
 
 export default globalErrorHandler;

@@ -1,0 +1,106 @@
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected string, received number"
+  },
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "Start Month is required"
+  },
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "endMonth"
+    ],
+    "message": "End Month is required"
+  }
+] Sun Jul 23 2023 0 : 7 : 0
+ [UM] [31merror[39m: [
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "Start Month is required"
+  },
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "endMonth"
+    ],
+    "message": "End Month is required"
+  }
+] Sun Jul 23 2023 0 : 7 : 12
+ [UM] [31merror[39m: [
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "Start Month is required"
+  }
+] Sun Jul 23 2023 0 : 8 : 50
+ [UM] [31merror[39m: Unexpected token } in JSON at position 30 Sun Jul 23 2023 0 : 9 : 3
+ [UM] [31merror[39m: [
+  {
+    "expected": "'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "startMonth"
+    ],
+    "message": "Start Month is required"
+  }
+] Sun Jul 23 2023 0 : 9 : 9
+ [UM] [31merror[39m: Unexpected token } in JSON at position 30 Sun Jul 23 2023 0 : 10 : 16
+ [UM] [31merror[39m: [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+] Sun Jul 23 2023 0 : 10 : 27
+ [UM] [31merror[39m: [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+] Sun Jul 23 2023 0 : 12 : 21
+ [UM] [31merror[39m: Unexpected number in JSON at position 36 Sun Jul 23 2023 0 : 12 : 35
+ [UM] [31merror[39m: Invalid semester title or code Sun Jul 23 2023 0 : 12 : 39
+ [UM] [31merror[39m: Invalid semester title or code Sun Jul 23 2023 0 : 17 : 49
+ [UM] [31merror[39m: Semester title and code are not match Sun Jul 23 2023 0 : 18 : 51
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 26 : 56
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 26 : 58
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 27 : 10
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 27 : 41
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 27 : 54
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 28 : 24
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 28 : 44
+ [UM] [31merror[39m: Academic Semester is not deleted Sun Jul 23 2023 0 : 29 : 2

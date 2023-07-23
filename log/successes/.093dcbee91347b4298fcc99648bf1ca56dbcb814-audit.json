@@ -6,21 +6,6 @@
     "auditLog": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\.093dcbee91347b4298fcc99648bf1ca56dbcb814-audit.json",
     "files": [
         {
-            "date": 1690004577352,
-            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-22-11.log",
-            "hash": "595a22fd0781d50d7e6ed7ca9f45d397baae1a32018f570b3accf2aec2b9aa8a"
-        },
-        {
-            "date": 1690007150409,
-            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-22-12.log",
-            "hash": "a6cfb80bc9bc4ed6e8f337eef209464d2563bc1e2a85fcde6feafe91bbc96f2d"
-        },
-        {
-            "date": 1690013570662,
-            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-22-14.log",
-            "hash": "e657744558a847804d00dd900c797c1b88750c041b439d0c134cd793cf61f786"
-        },
-        {
             "date": 1690016681253,
             "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-22-15.log",
             "hash": "580c7df428d5129463ce244b73b5a034c6eecf6fc9fb2ba712792e44df760949"
@@ -64,6 +49,31 @@
             "date": 1690052665546,
             "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-01.log",
             "hash": "3c33868d366261f9966e4d64ace4b010935628056ffa593f4fbb7bbcf51e5d10"
+        },
+        {
+            "date": 1690088753363,
+            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-11.log",
+            "hash": "63af3e2b0cbe243c038f89bbba714fe60a1cc271cbc974b3f2708ca99469b95a"
+        },
+        {
+            "date": 1690092084670,
+            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-12.log",
+            "hash": "61698079553ffdb9b8ad2711654965d15ffb17ad1af1aef25ef69f8e0866607b"
+        },
+        {
+            "date": 1690095627073,
+            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-13.log",
+            "hash": "6033b012ccfd661abcb286dd7e05babdd6d554d7643458aaf6aeccef4361a59e"
+        },
+        {
+            "date": 1690099259052,
+            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-14.log",
+            "hash": "f7ca596cbc0ccc01efc2423a5a5df11bb8a4f5b40d4ebd2ffb4b096991526f4e"
+        },
+        {
+            "date": 1690102824023,
+            "name": "E:\\Programming Hero\\Level-2\\University-management-server\\log\\successes\\success-2023-07-23-15.log",
+            "hash": "f153e98bdf78ffab3bfcd98cd68bd09d1c49a8134499a9e4cd86f3b78ab85916"
         }
     ],
     "hashType": "sha256"

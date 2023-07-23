@@ -1,0 +1,4 @@
+ [UM] [31merror[39m: Cast to ObjectId failed for value "{ _id: '64bc17ff3f426' }" (type Object) at path "_id" for model "AcademicSemester" Sun Jul 23 2023 11 : 12 : 11
+ [UM] [31merror[39m: Cast to ObjectId failed for value "{ _id: '64bc17ff3f426' }" (type Object) at path "_id" for model "AcademicSemester" Sun Jul 23 2023 11 : 21 : 43
+ [UM] [31merror[39m: Cast to ObjectId failed for value "{ _id: '64bc17ff3f426' }" (type Object) at path "_id" for model "AcademicSemester" Sun Jul 23 2023 11 : 27 : 22
+ [UM] [31merror[39m: Academic Semester is already exist Sun Jul 23 2023 11 : 42 : 1

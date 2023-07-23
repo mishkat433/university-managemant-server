@@ -1,0 +1,49 @@
+ [UM] [31merror[39m: E11000 duplicate key error collection: universityManagement.academicfaculties index: title_1 dup key: { title: "Faculty of Science and Engineering" } Sun Jul 23 2023 1 : 12 : 56
+ [UM] [31merror[39m: E11000 duplicate key error collection: universityManagement.academicfaculties index: title_1 dup key: { title: "Faculty of Science and Engineering" } Sun Jul 23 2023 1 : 13 : 46
+ [UM] [31merror[39m: E11000 duplicate key error collection: universityManagement.academicfaculties index: title_1 dup key: { title: "Faculty of Science and Engineering" } Sun Jul 23 2023 1 : 13 : 50
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "title is required"
+  }
+] Sun Jul 23 2023 1 : 21 : 13
+ [UM] [31merror[39m: E11000 duplicate key error collection: universityManagement.academicfaculties index: title_1 dup key: { title: "Faculty of Science and Engineering" } Sun Jul 23 2023 1 : 21 : 21
+ [UM] [31merror[39m: Academic Semester is already exist Sun Jul 23 2023 1 : 22 : 38
+ [UM] [31merror[39m: Academic Semester is already exist Sun Jul 23 2023 1 : 24 : 13
+ [UM] [31merror[39m: Academic Semester is already exist Sun Jul 23 2023 1 : 24 : 22
+ [UM] [31merror[39m: Academic faculty Semester is already exist Sun Jul 23 2023 1 : 25 : 0
+ [UM] [31merror[39m: Academic faculty is already exist Sun Jul 23 2023 1 : 25 : 9
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "title is required"
+  }
+] Sun Jul 23 2023 1 : 28 : 39
+ [UM] [31merror[39m: AcademicFaculty validation failed: title: Path `title` is required. Sun Jul 23 2023 1 : 28 : 54
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "title is required"
+  }
+] Sun Jul 23 2023 1 : 29 : 24
+ [UM] [31merror[39m: Academic faculty is already exist Sun Jul 23 2023 1 : 29 : 34
+ [UM] [31merror[39m:  is already exist Sun Jul 23 2023 1 : 31 : 32
+ [UM] [31merror[39m: Faculty of Science and Engineering is already exist Sun Jul 23 2023 1 : 32 : 0

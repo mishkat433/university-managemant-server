@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NextFunction, Request, RequestHandler, Response } from "express";
 import { userServices } from "./user.services";
 import catchAsync from "../../../shared/catchAsync";
@@ -16,7 +17,6 @@ const createUser: RequestHandler = catchAsync(async (req: Request, res: Response
         message: 'User created successfully',
         data: result
     })
-    next()
 })
 
 
