@@ -7,6 +7,7 @@ import { IPaginationOptions } from "../../../globalInterfaces/pagination";
 import { IGenericResponse } from "../../../globalInterfaces/common";
 import { SortOrder } from "mongoose";
 import { paginationHelper } from "../../../helper/paginationHepler";
+import paginationNextPrevHelper from "../../../helper/paginationNextPrevHelper";
 
 const createSemester = async (payload: IAcademicSemester): Promise<IAcademicSemester> => {
 
@@ -62,9 +63,7 @@ const getAllSemester = async (paginationOptions: IPaginationOptions, filters: IA
     const result = await AcademicSemester.find(whereCondition).sort(sortConditions).skip(skip).limit(limit)
 
     const count = await AcademicSemester.find(whereCondition).countDocuments()
-
-    const prevPage = page - 1 > 0 ? page - 1 : null
-    const nextPages = page + 1 <= Math.ceil(count / limit) ? page + 1 : null
+    const { nextPages, prevPage } = paginationNextPrevHelper(paginationOptions, count)
 
     return {
         meta: {
@@ -81,12 +80,41 @@ const getAllSemester = async (paginationOptions: IPaginationOptions, filters: IA
 
 
 const getSingleSemester = async (id: string): Promise<IAcademicSemester | null> => {
-    const result = await AcademicSemester.findById({ _id: id })
+    const result = await AcademicSemester.findById(id)
     return result
 }
+
+
+const updateSemester = async (id: string, payload: Partial<IAcademicSemester>): Promise<IAcademicSemester | null> => {
+
+    if (payload.title && payload.code && academicSemesterTitleCodeMapper[payload.title] !== payload.code) {
+        throw new ApiError(httpStatus.BAD_REQUEST, 'Semester title and code are not match')
+    }
+
+    const result = await AcademicSemester.findOneAndUpdate({ _id: id }, payload, { new: true });
+
+    return result
+}
+
+const deleteSemester = async (id: string): Promise<IAcademicSemester | null> => {
+
+    const result = await AcademicSemester.findOneAndDelete({ _id: id });
+
+    if (!result) {
+        throw new ApiError(httpStatus.BAD_REQUEST, 'Academic Semester is not deleted');
+    }
+
+    return result
+
+}
+
+
+
 
 export const academicSemesterServices = {
     createSemester,
     getAllSemester,
-    getSingleSemester
+    getSingleSemester,
+    updateSemester,
+    deleteSemester
 }

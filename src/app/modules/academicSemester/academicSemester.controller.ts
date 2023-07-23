@@ -1,4 +1,4 @@
-import { NextFunction, Request, RequestHandler, Response } from "express";
+import { Request, RequestHandler, Response } from "express";
 import { academicSemesterServices } from "./academicSemester.services";
 import catchAsync from "../../../shared/catchAsync";
 import sendResponse from "../../../shared/sendResponse";
@@ -10,7 +10,7 @@ import { academicSemesterFilterableFields } from "./academicSemesterConstants";
 
 
 
-const createSemester: RequestHandler = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
+const createSemester: RequestHandler = catchAsync(async (req: Request, res: Response) => {
 
     const { ...academicSemesterData } = req.body
     const result = await academicSemesterServices.createSemester(academicSemesterData)
@@ -21,11 +21,10 @@ const createSemester: RequestHandler = catchAsync(async (req: Request, res: Resp
         message: 'academicSemester created successfully',
         data: result
     })
-    next()
 })
 
 
-const getAllSemester: RequestHandler = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
+const getAllSemester: RequestHandler = catchAsync(async (req: Request, res: Response) => {
 
 
     const filters = pick(req.query, academicSemesterFilterableFields)
@@ -42,11 +41,10 @@ const getAllSemester: RequestHandler = catchAsync(async (req: Request, res: Resp
         meta: result.meta,
         data: result.data
     })
-    next()
 
 })
 
-const getSingleSemester: RequestHandler = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
+const getSingleSemester: RequestHandler = catchAsync(async (req: Request, res: Response) => {
 
     const id = req.params.id
 
@@ -55,15 +53,48 @@ const getSingleSemester: RequestHandler = catchAsync(async (req: Request, res: R
         statusCode: httpStatus.OK,
         success: true,
         message: 'Semester retrieved successfully',
+        data: result === null ? [] : result
+    })
+})
+
+const updateSemester: RequestHandler = catchAsync(async (req: Request, res: Response,) => {
+
+    const id = req.params.id;
+    const updateData = req.body
+
+    const result = await academicSemesterServices.updateSemester(id, updateData)
+
+    sendResponse<IAcademicSemester>(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: 'Semester update successfully',
         data: result
     })
-    next()
+
 })
+
+const deleteSemester: RequestHandler = catchAsync(async (req: Request, res: Response,) => {
+
+    const id = req.params.id;
+
+    const result = await academicSemesterServices.deleteSemester(id)
+
+    sendResponse<IAcademicSemester>(res, {
+        statusCode: httpStatus.OK,
+        success: true,
+        message: 'Semester deleted successfully',
+        data: result
+    })
+
+})
+
 
 
 
 export const academicSemesterController = {
     createSemester,
     getAllSemester,
-    getSingleSemester
+    getSingleSemester,
+    updateSemester,
+    deleteSemester
 };

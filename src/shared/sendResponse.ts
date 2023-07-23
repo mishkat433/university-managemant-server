@@ -8,8 +8,10 @@ type IApiResponse<T> = {
         page?: number;
         limit?: number;
         total?: number;
+        nextPage?: number | null;
+        prevPage?: number | null;
     };
-    data?: T | null;
+    data?: T | null | [];
 };
 
 const sendResponse = <T>(res: Response, data: IApiResponse<T>): void => {
