@@ -1,0 +1,62 @@
+ [UM] [31merror[39m: Academic Semester is already exist Sat Jul 22 2023 11 : 4 : 30
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 31 : 29
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 31 : 43
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 32 : 11
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 32 : 15
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 32 : 39
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 33 : 18
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 34 : 40
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 39 : 11
+ [UM] [31merror[39m: Cast to number failed for value "au" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 39 : 24
+ [UM] [31merror[39m: Cast to number failed for value "Fall" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 39 : 39
+ [UM] [31merror[39m: Cast to number failed for value "01" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 39 : 48
+ [UM] [31merror[39m: Cast to number failed for value "01" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 39 : 57
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 42 : 20
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 42 : 33
+ [UM] [31merror[39m: $regex has to be a string Sat Jul 22 2023 11 : 43 : 57
+ [UM] [31merror[39m: $regex has to be a string Sat Jul 22 2023 11 : 44 : 54
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 47 : 37
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 48 : 31
+ [UM] [31merror[39m: Cast to number failed for value "i" (type string) at path "year" for model "AcademicSemester" Sat Jul 22 2023 11 : 49 : 39
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected string, received number"
+  }
+] Sat Jul 22 2023 11 : 53 : 8
+ [UM] [31merror[39m: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected string, received number"
+  }
+] Sat Jul 22 2023 11 : 53 : 27
+ [UM] [31merror[39m: Invalid semester code Sat Jul 22 2023 11 : 54 : 4
+ [UM] [31merror[39m: Academic Semester is already exist Sat Jul 22 2023 11 : 54 : 44
+ [UM] [31merror[39m: [
+  {
+    "received": "summer",
+    "code": "invalid_enum_value",
+    "options": [
+      "Autumn",
+      "Summer",
+      "Fall"
+    ],
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'summer'"
+  }
+] Sat Jul 22 2023 11 : 55 : 0
